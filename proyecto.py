@@ -74,7 +74,7 @@ while True:
                 print(f"-[{index}] {lista}")  # -muestra al usuario lista de recetas de esa categoria
             total_lista = len(lista_recetas)
             opcion_receta = int(input('Seleccione el numero de la receta: '))
-            if total_lista < opcion_receta :
+            if opcion_receta <= total_lista:
                 valor_receta = open(lista_recetas[opcion_receta])
                 print(valor_receta.readlines())  # IMPRIME LA RECETA
             else:
